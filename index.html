@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Adivinhe a Palavra</title>
+
+		<!--links bootstrap-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="game.css"> <!--link do CSS-->
+
+		<script src="game_login.js"></script> <!--link JavaScript-->
+
+	</head>
+
+	<body>
+
+		<!--adicione uma tag center (todos os demais elementos serão escritos dentro da tag center)-->
+		<center>
+
+			<!--adicione uma tag h1 com o texto Jogo-->
+			<h1>Jogo</h1>
+
+			<!--adicione uma div para o login do Jogador 1, com a classe bootstrap e a classe login_div1-->
+			<div class="-col-lg-4 col-sm-8 col-xs-11 login_div1">  
+
+
+				<!--Classe de bootstrap:-->
+				<!--col-lg-4, col-sm-8 e col-xs-11 é usado para dar largura ao div-->
+
+				<!--dicione uma tag h3 com o texto Jogador 1, faça o login para jogar.-->
+				<h3> Jogador 1, faça login para jogar</h3>
+
+				<!--insira uma tag label (etiqueta de rótulo) que contém o texto Nome de usuário:-->
+				<label>Nome de usuário</label>
+
+				<!--insira uma caixa de entrada (tag input com a id="player1NameInput", class="form-control" e placeholder="Nome do Jogador 1")-->
+                <input type="text" id="player1NameInput" class="form-control" placeholder="Nome do Jogador 1">
+				<!--id: fornecemos id para identificação desta caixa de entrada-->
+				<!--class=”form-control”: esta é uma classe de bootstrap, que adiciona preenchimento, margem e borda à caixa de entrada-->
+				<!--placeholder: é como uma dica para a caixa de entrada-->
+			</div>
+				<!--insira a tag para quebra e linha-->
+				<br>
+
+
+				<!--com base na div anterior, crie uma div semelhante para o Jogador 2, mudando o texto e o id para adequá-lo-->
+				<div class="-col-lg-4 col-sm-8 col-xs-11 login_div2">  
+					<h3> Jogador 2, faça login para jogar</h3>
+					<label>Nome de usuário</label>
+					<input type="text" id="player2NameInput" class="form-control" placeholder="Nome do Jogador 2">
+				</div>
+				<br>
+
+				<!--adicione o botão de login, com width: 30% class="btn btn-primary" onclick="addUser()" e o texto Logar-->
+                  <button style="width: 30%" class="btn btn-primary" onclick="addUser()">Logar</button>
+				<!--btn: adicionará preenchimento e removerá a borda e a cor padrão do botão-->
+				<!--btn-primary: adicionará borda azul escura e cor de fundo ao botão-->
+				<!--onclick="addUser()": vamos definir esta função no arquivo JS-->
+			</center>
+
+
+	</body>
+
+</html>
